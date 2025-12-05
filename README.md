@@ -44,7 +44,7 @@ opencv-python
 numpy
 Pillow
 
-## ¢º? How to Run the Project
+## How to Run the Project
 ### Run Inference (Digit Detection + Recognition)
 
 Produces 5 output images in graded_images/.
