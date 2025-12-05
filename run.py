@@ -26,7 +26,7 @@ MODE = "train"
 DATA_ROOT = "data"
 CHECKPOINT_DIR = "checkpoints"
 GRADED_OUTPUT_DIR = "graded_images"
-DEMO_IMAGE_DIR = "test"
+DEMO_IMAGE_DIR = "inputs"
 os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 os.makedirs(GRADED_OUTPUT_DIR, exist_ok=True)
 os.makedirs(DEMO_IMAGE_DIR, exist_ok=True)
@@ -483,11 +483,10 @@ def demo(
         if f.lower().endswith(".png")
     ]
     # import pdb; pdb.set_trace()
-    sampled = random.sample(all_images, 100)
-    for i in range(len(sampled)):
+    for i in range(len(all_images)):
         # in_path = sampled[i]
-        in_path = os.path.join(DEMO_IMAGE_DIR, sampled[i])
-        out_path = os.path.join(GRADED_OUTPUT_DIR, sampled[i])
+        in_path = os.path.join(DEMO_IMAGE_DIR, all_images[i])
+        out_path = os.path.join(GRADED_OUTPUT_DIR, all_images[i])
 
         image_bgr = cv2.imread(in_path)
         boxes = mser(image_bgr)

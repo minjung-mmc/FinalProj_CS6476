@@ -9,7 +9,7 @@ def mser(image_bgr):
 
 def mser_pyramid(
     image_bgr,
-    scales=[1.0],
+    scales=[1.0, 0.75],
     min_area=60,
     max_area=8000,
     delta=5,
