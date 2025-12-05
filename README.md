@@ -1,6 +1,6 @@
 # FinalProj_CS6476
 
-## Final Project for Georgia Tech CS 6476 ? Computer Vision
+## Final Project for Georgia Tech CS 6476  Computer Vision
 ## Digit Detection & Recognition Pipeline (MSER + CNN)
 
 ## Project Overview
@@ -24,22 +24,23 @@ Final output: 5 processed images with bounding boxes + predicted sequences saved
 ## Repository Structure
 ```
 FinalProj_CS6476/
-戍式式 checkpoints/        # trained model weights (.pth)
-戍式式 run.py              # main entry script
-戍式式 network.py          # CNN architectures (CustomCNN, VGG16 finetune)
-戍式式 utils.py            # MSER, NMS, pyramid, preprocessing
-戍式式 config.py           # configuration system
-戍式式 inputs/             # input demo test images
-戍式式 graded_images/      # output images written during test mode
-戌式式 README.md
+|--checkpoints/        # trained model weights (.pth)
+|-- run.py              # main entry script
+|-- network.py          # CNN architectures (CustomCNN, VGG16 finetune)
+|-- utils.py            # MSER, NMS, pyramid, preprocessing
+|-- config.py           # configuration system
+|-- inputs/             # input demo test images
+|-- graded_images/      # output images written during test mode
+|-- README.md
 ```
 
 ## Requirements
 
 manually:
 
-torch
-torchvision
+python == 3.11
+torch == 2.0.1
+torchvision == 0.15.2
 opencv-python
 numpy
 Pillow
