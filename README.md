@@ -22,7 +22,7 @@ or Fine-tuned VGG16
 Final output: 5 processed images with bounding boxes + predicted sequences saved to graded_images/.
 
 ## Repository Structure
-'''
+```
 FinalProj_CS6476/
 戍式式 checkpoints/        # trained model weights (.pth)
 戍式式 run.py              # main entry script
@@ -32,9 +32,9 @@ FinalProj_CS6476/
 戍式式 inputs/             # input demo test images
 戍式式 graded_images/      # output images written during test mode
 戌式式 README.md
-'''
+```
 
-? Requirements
+## Requirements
 
 manually:
 
@@ -45,13 +45,12 @@ numpy
 Pillow
 
 ## Ⅱ? How to Run the Project
-1 Run Inference (Digit Detection + Recognition)
+### Run Inference (Digit Detection + Recognition)
 
 Produces 5 output images in graded_images/.
-
-Custom CNN
+```
 python run.py --mode test --model_type CustomCNN
-
+```
 
 This will:
 
