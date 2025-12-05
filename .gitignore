@@ -1,0 +1,8 @@
+*.png
+*tfevents.*
+*.pyc
+*.mat
+*.m
+*.json
+*.DS_Store
+*.pth
