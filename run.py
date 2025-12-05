@@ -422,7 +422,9 @@ def classify_digits(
         
         t = tfm(pil)
         inputs.append(t)
-
+    
+    if len(inputs) == 0:
+        return []
     batch = torch.stack(inputs, dim=0).to(device)
     outputs = model(batch)
     probs = torch.softmax(outputs, dim=1)
